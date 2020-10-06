@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<link rel="icon" href="favicon.png">
+<html>
+    
+    <head>
+        <title>Boy Sugijakko</title>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Anton|Carter+One|Special+Elite&display=swap" rel="stylesheet">
+        <script src="Script.js"></script>
+    </head>
+
+    <body onload="CategoryFunc('AllSort')"> 
+        <div class="firstSection">
+            <div class="navContainer">
+                <nav>
+                    <strong class="title">PORTOFOLIO</strong>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="#projectScroll">PROJECTS</a></li>
+                        <li><a href="#aboutScroll">ABOUT</a></li>
+                        <li><a href="#contactScroll">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="name">
+                <div>
+                    <strong>BOY<br>SUGIJAKKO</strong>
+                </div>
+                <div class="contactButton">
+                    <a href="#contactScroll">
+                    <div>
+                        CONTACT ME
+                    </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="curved">
+            </div>
+        </div>
+
+        <div class="ALLBG">
+        
+        <div class="thirdSection" id="aboutScroll">
+                <div class="aboutTitle">
+                    ABOUT ME
+                </div>
+    
+                <div class="about">
+                    <div>
+                        <img src="Selfie.png" width="170px" height="170px">
+                    </div>
+    
+                    <div>
+                        Hello, my name is Boy Sugijakko. I was born on the 3rd of August 2000. 
+                        I am an honest, hardworking, and easy-going individual, with broad skills in technology. I am a student majoring in Information Technology at Binus University. I am from Batam and currently living in Jakarta to pursue higher education. I love technology and am passionate to learn more about it.
+                    </div>
+                </div>
+        </div>
+
+        <hr id="divLine" size="10" width="70%" color="white">
+
+        <div class="secondSection" id="projectScroll">
+                <div class="projectTitle">
+                    MY PROJECTS
+                </div>            
+                
+                <div class="category">
+                    <ul>
+                        <li><div class="sort" id="AllSort" onclick="CategoryFunc('AllSort')">ALL</div></li>
+                        <!-- <li><div class="sort" id="PhotoshopSort" onclick="CategoryFunc('PhotoshopSort')">Photoshop</div></li> -->
+                        <!-- <li><div class="sort" id="IllustratorSort" onclick="CategoryFunc('IllustratorSort')">Illustrator</div></li> -->
+                        <li><div class="sort" id="UnitySort" onclick="CategoryFunc('UnitySort')">Unity</div></li>
+                        <li><div class="sort" id="WebsiteSort" onclick="CategoryFunc('WebsiteSort')">website</div></li>
+                        <li><div class="sort" id="PythonSort" onclick="CategoryFunc('PythonSort')">Python</div></li>
+                    </ul>
+                </div>
+    
+                <div class="projects">
+                    <div class="projectContainer">
+                        <div class="projectContent" id="Unity">
+                            <div class="explanation">
+                                <h2>Hammer Time <h4>(01/09/2019 - 10/09/2019)</h4></h2>
+                                <br>
+                                HammerTIme is a mobile game on Android that i developed with Unity. HammerTime is a game where
+                                the player tries to hit the nail as much as they can, the game will be over as soon as the player fails to
+                                hit the nail. I created this game to learn more about unity, game making, and game designing. This game
+                                is created with Unity Engine.<br><br>
+                                What I have learned:<br>
+                                - Basics skills of unity<br>
+                                - Basics of C#<br>
+                                - Planning a project<br>
+                                - Designing and implementing UI for mobile game<br>
+                                - Creating game assets in Adobe Illustrator<br>
+                            </div>
+    
+                            <div class="picture">
+                                <img src="hammerTime.png" alt="hammerTime_img">
+                            </div>
+                        </div>
+    
+                        <div class="projectContent" id="Unity">
+                                <div class="picture">
+                                    <img src="kaelo.png" alt="kaelo_img">
+                                </div>
+    
+                                <div class="explanation">
+                                    <h2>Kaelo  <h4>(01/08/2019 - 20/08/2019)</h4></h2>
+                                    <br>
+                                    Kaelo is a mobile game on Android that i developed with Unity. Kaelo is a virtual pet game, where
+                                    there is a penguin that you have to take care and play with. There is a money system where player earn
+                                    money by interacting with the penguin, and the money can be used to buy food for the penguin.I created
+                                    this game to learn how to design and code a game. This game is coded in C#.<br><br>
+                                    What I have learned:<br>
+                                    - Basic skills of unity
+                                    - Basics of C#<br>
+                                    - Planning a project<br>
+                                    - Designing and implementing UI for mobile game<br>
+                                    - Basics of animation<br>
+                                </div>
+                        </div>
+
+                        <div class="projectContent" id="Website">
+
+                            <div class="explanation">
+                                <h2>Ciak <h4>(1/05/2019 – 25/05/2019)</h4></h2>
+                                <br>
+                                Ciak is a website that provides list of popular and recommended places to eat in several cities. The list
+                                can be filtered by city. I created this website to practice and learn the basics of HTML, CSS, and
+                                JavaScript.<br><br>
+                                What I have learned:<br>
+                                - Basics of HTML<br>
+                                - Basics of CSS<br>
+                                - Basics of JavaScript<br>
+                                - Designing a website<br>
+                            </div>
+
+                            <div class="picture">
+                                <img src="ciak.png" alt="ciak_img">
+                            </div>
+                        </div>
+
+                        <div class="projectContent" id="Python">
+                            <div class="picture">
+                                <img src="bandarmologi.png" alt="bandarmologi_img">
+                            </div>
+
+                            <div class="explanation">
+                                <h2>Bandarmologi-bot <h4>(20/07/2020 - 15/08/2020)</h4></h2>
+                                <br>
+                                Bandarmologi-bot is a data manipulation application for analysing stocks that I developed using Python
+                                and Auto Hot Key. This application is made based on a technique on analysing stocks named
+                                “Bandarmologi”. Before using the application, the user must first download the data required from a
+                                specific application using the script available. After downloading the data, the user could then input
+                                commands to Bandarmologi-bot to use the application.<br><br>
+                                What I have learned:<br>
+                                - Basics of python<br>
+                                - Basics of data manipulation<br>
+                                - Basics of macro and scripting<br>
+                                - Basics of Auto Hot Key<br>
+                                - Basics of API<br>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+<!-- 
+                <div id="more" onclick="showMore()">
+                    MORE <br> <span style="font-size: 1.8vw">&#9661</span>
+                </div>
+
+                <div id="less" onclick="showLess()">
+                    <span style="font-size: 1.8vw">&#9651</span> <br> Less
+                </div> -->
+        </div>
+
+        <hr id="divLine" size="10" width="70%" color="white">
+
+        <div class="fourthSection" id="contactScroll">
+            <div class="contactTitle">
+                CONTACT ME
+            </div>
+
+            <!-- <div class="emailContainer">
+
+                <div class="inputField">
+                    <div id="nameEmail">
+                        <input id="name" type="text" name="name" placeholder="  Name">
+                        <input id="email" type="text" name="email" placeholder="  Email">
+                    </div>
+                    <input id="subject" type="text" name="subject" placeholder="  Subject">
+                    <br>
+                    <textarea id="message" type="text" name="message" placeholder=" Message"></textarea>
+                </div>
+
+                <div class="sendContainer">
+                    <div class="sendButton">
+                        SEND
+                    </div>
+                </div>
+            </div> -->
+
+            <div class="otherContact">
+                <div class="logo">
+                    <img src="LINE.png" width="80px" height="80px">
+                    <br><br>ID: BOYSUGI
+                </div>
+                <div class="logo">
+                    <a href = "mailto: sugijakkoboy@gmail.com">
+                        <img src="Email.png" width="80px" height="80px">
+                        <br><br>SUGIJAKKOBOY@GMAIL.COM
+                    </a>
+                </div>
+                <div class="logo">
+                    <a href="https://www.linkedin.com/in/boy-sugijakko-a0401a199/">
+                        <img src="linkedin.png" width="80px" height="80px">
+                        <br><br>LinkedIn - Boy Sugijakko
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </body>
+
+    <footer>
+        MADE BY BOYSUGI - 2019
+    </footer>
+</html>
