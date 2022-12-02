@@ -1,6 +1,4 @@
 function CategoryFunc(buttonName){
-    console.log(buttonName);
-
     var x = document.getElementsByClassName("sort");
 
     for(var i = 0 ; i < x.length ; i++){
@@ -9,24 +7,7 @@ function CategoryFunc(buttonName){
 
     document.getElementById(buttonName).style.backgroundColor = "#af0404";
 
-    if(buttonName == "AllSort"){
-        var category = "All";
-    }
-    else if(buttonName == "PhotoshopSort"){
-        var category = "Photoshop";
-    }
-    else if(buttonName == "IllustratorSort"){
-        var category = "Illustrator";
-    }
-    else if(buttonName == "UnitySort"){
-        var category = "Unity";
-    }
-    else if(buttonName == "WebsiteSort"){
-        var category = "Website";
-    }
-    else if(buttonName == "PythonSort"){
-        var category = "Python";
-    }
+    var category = buttonName.replace("Sort", "");
 
     var y = document.getElementsByClassName("projectContent");
     for(var j = 0 ; j < y.length ; j++){
@@ -37,7 +18,7 @@ function CategoryFunc(buttonName){
             y[j].style.display = "none";
         }
     }
-    showLess();
+    // showLess();
 }
 
 // function showLess(){
